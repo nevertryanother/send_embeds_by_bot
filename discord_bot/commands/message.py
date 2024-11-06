@@ -18,7 +18,6 @@ class Embed(commands.Cog):
                 description="Данные в формате JSON"
             )
         ):
-        print(f"Права пользователя: {interaction.user.guild_permissions}")
         await self.send_message(interaction, json_data)
 
     @embed.sub_command(name="изменить", description="Изменить сообщение")
